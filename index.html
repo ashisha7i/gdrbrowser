@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>GDR Elasticsearch Data Browser</title>
+	<script>
+		function openIndex(indexName){
+			window.open("http://localhost:9200/_plugin/browser/?database=gdrindex&table="+indexName, "_self");
+		}
+	</script>
+	<style>
+		body {
+			font-family: Verdana;
+		}
+	</style>
+</head>
+<body>
+<p>This is a modified file for 'browser' plugin for use with GDR Application. <br>Currently added indexes are (click name to open index):<ul>
+<li><a href="javascript:openIndex('br');">BR</a></li>
+<li><a href="javascript:openIndex('behavior');">Behaviors</li>
+<li><a href="javascript:openIndex('eligibility');">Eligibility Criteria</a></li>
+</ul></p>
+</body>
+</html>
